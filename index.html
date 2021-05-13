@@ -1,82 +1,67 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal Agency</title>
 
-    <link rel="icon" type="image/png" href="assets/crystal.png"/>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Agency</title>
+
+  <link rel="icon" type="image/png" href="assets/crystal.png" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 </head>
+
 <body>
+
+  <div class="container-fluid">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script src="app.js"></script>
+    <script src="csi.js"></script>
 
+    <div data-include="navbar.html"></div>
 
-    <div class="container-fluid">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light align-items-center" id="navbar">
-            <a class="navbar-brand align-items-center" href="#">
-              <img src="assets/crystal.png" alt="Crystal logo" style="width: 2rem; height: 2rem;">
-              Crystal Agency
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#our-clients">Our clients</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/toto1384">GitHub</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.linkedin.com/in/alex-totolici-2a4709186/">LinkedIn</a>
-                </li>
+    <div class="row d-flex justify-content-between hero_section w-auto" style="height:90vh; top: 0px; position: abosolute;">
+      <div class="col-6 align-self-center p-5 justify-content-center">
+        <img src="assets/illustration.png" alt="Simple social networking"
+          style="border-radius: 1rem; max-height: 60vh;">
+      </div>
+      <div class="col-6 d-flex hero_text_container justify-content-center" style="height: 90vh;">
+        <div class="hero_text align-self-center justify-content-center text-center">
+          <h2 class="text-center">Your Saas on all platforms</h2>
+          <h3 class="text-center">Weekly responsive prototypes. One codebase. 5x faster than everyone</h3>
 
-              </ul>
-            </div>
-          </nav>
-
-        <div class="row d-flex justify-content-between hero_section w-auto" style="height:90vh">
-            <div class="col-6 align-self-center p-5 justify-content-center">
-                <img src="assets/illustration.png" alt="Simple social networking" style="border-radius: 1rem; max-height: 60vh;">
-            </div>
-            <div class="col-6 d-flex hero_text_container justify-content-center" style="height: 90vh;">
-                <div class="hero_text align-self-center justify-content-center text-center">
-                    <h2 class="text-center">Your Saas on all platforms</h2>
-                    <h3 class="text-center">Weekly responsive prototypes. One codebase. 5x faster than everyone</h3>
-
-                    <button class="btn btn-primary btn-lg m-5 text-center" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/totoalex62/app-meeting'});return false;">Schedule meeting</a>
-                </div>
-            </div>
-
+          <button class="btn btn-primary btn-lg m-5 text-center" href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/totoalex62/app-meeting'});return false;">Schedule
+            meeting</a>
         </div>
-
-        <h3 class="text-center my-5" id="our-clients">Our clients</h3> 
-
-        <div class="testimonials w-auto justify-content-center">
-            <div class="card mx-auto d-block" style="width: 40vw;">
-                <img src="assets/s1.jpg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h5>David Lehnhardt</h5>
-                    </div>
-                    <div class="card-text">
-                        If this seems over the top and fake, We feel you. Book a call with us and we will show all the proof :))
-                    </div>
-            </div>
-        </div>
-        <br><br><br><br>
-        <hr class="my-3">
-        <br><br><br><br>
-
+      </div>
 
     </div>
 
+    <h3 class="text-center my-5" id="our-clients">Our clients</h3>
 
-    
+    <div class="testimonials w-auto justify-content-center">
+      <div class="card shadow mx-auto d-block" style="width: 40vw;">
+        <img src="assets/s1.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>David Lehnhardt</h5>
+          </div>
+          <div class="card-text">
+            If this seems over the top and fake, We feel you. Book a call with us and we will show all the proof :))
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>
+      <hr class="my-3">
+      <br><br><br><br>
+
+
+    </div>
+  </div>
+
 </body>
+
 </html>

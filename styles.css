@@ -5,6 +5,26 @@
   scroll-behavior: smooth;
 }
 
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #f67280 !important;
+  border-width: 0px !important;
+}
+
+.card {
+  border: none !important;
+}
+
+.card,
+.btn,
+.card-img-top,
+.rounded,
+.form-control {
+  border-radius: 10px !important;
+}
+
 .navbar {
   top: 0;
   transition: top 0.3s;
